@@ -97,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -203,9 +203,20 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 768px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
+  }
+  .blog_image {
+    height: 250px;
+  }
+}
+@media (min-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+  .blog_image {
+    height: 450px;
   }
 }
 
